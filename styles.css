@@ -1,0 +1,98 @@
+/* general css */
+html{
+    
+    
+}
+h1{
+font-family: 'Big Shoulders Display', cursive;
+
+}
+h2{
+
+}
+
+/* the intro */
+
+.black-div{ background-color: hsl(0, 0%, 8%);
+    height:10vh;
+    width: 30vw;
+    color: hsl(0, 0%, 100%);
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+  
+
+}
+.background-image{ background-image: url(./images/desktop/image-hero@2x.jpg);
+    height: 500px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+
+}
+/* grid pictures  */
+.gallery-body{
+
+}
+.grid-1{
+
+}
+.grid-2{
+
+}
+.grid-3{
+
+}
+.gridbox{
+
+}
+/* footer elements */
+.h1-footer{
+
+}
+.p-footer{
+
+}
+.icons{
+
+}
+/* location  */
+.location-map{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+.location-body{
+    height: 80vh;
+    width: 100vw;
+    background-color: hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 100%);
+    display: flex;
+}
+footer{
+    background-color: rgb(213, 150, 108);
+    display: flex;
+    width: 100vw;
+
+}
+
+.fheading{ text-transform: uppercase;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: bolder;
+    padding: 80px;
+}
+.fparagrah{ align-items: center;
+    padding: 70px;
+    font-size: 18px;
+    line-height: 28px;
+    font-family: 'Outfit', sans-serif;
+}
+i{
+    padding: 20px;
+    font-size: x-large;
+   justify-content: center;
+   position: relative; left: 200px; top: 70px;
+
+    
+}
