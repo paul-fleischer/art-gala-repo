@@ -1,11 +1,8 @@
 /* general css */
-html{
-     
-}
+
 button{
-   
-   background-color: hsl(0, 0%, 8%);
-   color: hsl(0, 0%, 100%);
+background-color: hsl(0, 0%, 8%);
+color: hsl(0, 0%, 100%);
 font-family: 'Big Shoulders Display', cursive;
 font-size: xx-large;
 position: relative; left: 250px;
@@ -19,20 +16,11 @@ button:hover{
 
 .arrow{
     border:solid black;
-    
 }
 
 .arrow:hover{
     background-color: hsl(0, 0%, 8%);
 }
-h1{
-
-
-}
-h2{
-
-}
-
 /* the intro */
 
 .black-div{ background-color: hsl(0, 0%, 8%);
@@ -69,15 +57,11 @@ h2{
 
 }
 /* footer elements */
-.h1-footer{
-
+#index{
+    background-color: hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 100%);
 }
-.p-footer{
 
-}
-.icons{
-
-}
 /* location  */
 .location-map{
     height: 72vh;
