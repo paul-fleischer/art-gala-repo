@@ -1,5 +1,8 @@
 /* general css */
-
+body{
+    margin: 0;
+    padding: auto;
+}
 button{
 background-color: hsl(0, 0%, 8%);
 color: hsl(0, 0%, 100%);
@@ -7,7 +10,6 @@ font-family: 'Big Shoulders Display', cursive;
 font-size: xx-large;
 position: relative; left: 10em;
 padding: 0.7em;
-
 
 }
 button:hover{
@@ -23,8 +25,7 @@ button:hover{
 }
 /* the intro */
 .index-container{
-    border: 2px solid blue;
-    display: flex;
+   display: flex;
 }
 .black-div{ background-color: hsl(0, 0%, 8%);
     height: 85vh;
@@ -49,19 +50,84 @@ button:hover{
 }
 /* grid pictures  */
 .gallery-body{
+/* border: 2px solid red; */
+}
+article{
+    display: flex;
+}
+.gallery-article{
+    /* border: 2px solid blue; */
+    width: 40vw;
+}
+.gallery-article h1{
+    font-size: 4em;
+    font-family: 'Big Shoulders Display', cursive;
+    padding-left: 2em;
+    line-height: 1em;
+    padding-top: 2.5em;
+    
+}
+.gallery-article p{
+    font-family: 'Outfit',sans-serif;
+    /* border: 2px solid red; */
+    margin-right: 2em;
+    margin-left: 2em;
+    font-size: 1.5em;
+    padding-left: 3.5em;
+    margin-top: -2.7em;
+}
+
+.grid-img1{
+    width: 45vw;
+    height: 50vh;
+    position: relative; 
+    padding-top: 10em;
+    padding-bottom: 2em;
+    padding-left: 3em;
 
 }
-.grid-1{
+
+
+.multi-grid{
+    
+    position: relative;
+    margin-bottom: 10em;
+    
+   
+}
+.grid-img2 {
+    width: 45vw;
+    height: 85vh;
+    margin-left: 4em;
 
 }
-.grid-2{
-
-}
-.grid-3{
-
+.grid-img3{
+   width: 30vw;
+   height: 40vh;
+   float: right;
+   margin-top: -21.8em;
+   margin-right: 6em;
+   
 }
 .gridbox{
+    background-color: hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 100%);
+    width: 30vw;
+    height: 41vh;
+    float: right;
+    margin-top: -21em;
+    margin-right: 12em ;
+    padding: 5em;
+    box-sizing: border-box;
 
+}
+.gridbox h1{
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 1em;
+}
+.gridbox p{
+    font-family:'Outfit', sans-serif;
+    font-size: 1.5em;
 }
 /* footer elements */
 #index{
@@ -112,9 +178,7 @@ button:hover{
     margin-right: 10em;
     margin-top: -0.7em;
     margin-left: 4.25em;
-   
-    
-    
+
 }
 
 footer{
@@ -122,6 +186,7 @@ footer{
     display: flex;
     width: 100vw;
     max-height: 100vh;
+    
 
 }
 
@@ -149,8 +214,8 @@ i{
     padding-left: 0.5em;
     padding-top: 2.7em;
     font-size: x-large;
-   justify-content: center;
-   position: relative; left: 9em; top: 1.375em;
+    justify-content: center;
+     position: relative; left: 9em; top: 1.375em;
    
 }
 
