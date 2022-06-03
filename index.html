@@ -5,99 +5,153 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Modern Art Gallery</title>
-   <link rel="preconnect" href="https://fonts.googleapis.com"> 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com"> 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <section>
-      <div class="index-container">
-        <div class="black-div">
-          <h1>
-            MODERN <br />
-            ART GALLERY
-          </h1>
-        </div>
-        <div class="background-image">
-          <p>
-            The arts in the collection of the Modern art gallery all started
-            from a spark of inspiration. will these pieces inspire you? Visit us
-            and find out
-          </p>
-        </div>
-        <div class="button">
-      <a href="location.html">OUR LOCATION</a>
-    </div>
-        <!-- <div class="button">
-        <a href="./location.html">
-          <button class="button-index">Location</button></a>
-        </div> -->
+    <header>
+      <div class="black-div"></div>
+      <div class="desktop-hero-img">
+        <img src="./images/desktop/image-hero.jpg" alt="hero-image" />
       </div>
-    </section>
+      <div class="tablet-hero-img">
+        <img src="./images/tablet/image-hero.jpg" alt="hero-image" />
+      </div>
+      <div class="mobile-hero-img">
+        <img src="./images/mobile/image-hero.jpg" alt="hero-image" />
+      </div>
+      <div class="hero-text">
+        <h1>MODERN<br/>ART GALLERY</h1>
+        <p>
+          The arts in the collection of the Modern art gallery all started from
+          a spark of inspiration. will these pieces inspire you? Visit us and
+          find out
+          <div class="home-button">
+            <a href="location.html">OUR LOCATION</a>
+          </div>
+        </p>
+      </div>
+      <div class="white-background"></div>
+    </header>
     <!-- Day at the gallery -->
     <section>
       <div class="gallery-body">
-        <article>
+        <div class="grid">
+          <div class="grid-img1">
+            <!-- desktop version -->
+            <img
+              src="./images/desktop/image-grid-1.jpg"
+              alt="image-grid-1"
+              class="desktop"
+            />
+            <!-- tablet version -->
+            <img
+              src="./images/tablet/image-grid-1.jpg"
+              alt="image-grid-1"
+              class="tablet"
+            />
+            <!-- mobile -->
+            <img
+              src="./images/mobile/image-grid-1.jpg"
+              alt="image-grid-1"
+              class="mobile"
+            />
+          </div>
           <div class="gallery-article">
-            <h1>
-              YOUR DAY AT <br />
-              THE GALLERY
-            </h1>
+            <h2>
+              YOUR DAY <br />
+              AT THE GALLERY
+            </h2>
             <p>
               Wander through our district collections and find new insights
               about our artists. Dive into the details of their creative process
             </p>
           </div>
-          <img
-            src="./images/desktop/image-grid-1@2x.jpg"
-            alt="image-grid-1"
-            class="grid-img1"
-          />
-      </div>
-        </article>
-      <div class="multi-grid">
           <div class="grid-img2">
+            <!-- desktop version -->
             <img
-              src="./images/desktop/image-grid-2@2x.jpg"
-              alt="image-grid-2"
-              class="grid-img2"
+              src="./images/desktop/image-grid-2.jpg"
+              alt="image-grid-1"
+              class="desktop"
+            />
+            <!-- tablet version -->
+            <img
+              src="./images/tablet/image-grid-2.jpg"
+              alt="image-grid-1"
+              class="tablet"
+            />
+            <!-- mobile -->
+            <img
+              src="./images/mobile/image-grid-2.jpg"
+              alt="image-grid-1"
+              class="mobile"
             />
           </div>
           <div class="grid-img3">
-              <img
-                src="./images/desktop/image-grid-3@2x.jpg"
-                alt="image-grid-3"
-                class="grid-img3"
-              />
+            <!-- desktop version -->
+            <img
+              src="./images/desktop/image-grid-3.jpg"
+              alt="image-grid-1"
+              class="desktop"
+            />
+            <!-- tablet version -->
+            <img
+              src="./images/tablet/image-grid-3.jpg"
+              alt="image-grid-1"
+              class="tablet"
+            />
+            <!-- mobile -->
+            <img
+              src="./images/mobile/image-grid-3.jpg"
+              alt="image-grid-1"
+              class="mobile"
+            />
           </div>
           <div class="gridbox">
-              <h2>COME & BE INSPIRED</h2>
-              <p>
-                We're excited to welcome you to our gallery and see how our
-                collections influence you.
-              </p>
+            <div class="gridbox-title">
+            <h2>COME & BE INSPIRED</h2>
+            <p>
+              We're excited to welcome you to our gallery and see how our
+              collections influence you.
+            </p>
+            </div>
           </div>
+        </div>
       </div>
     </section>
     <!-- footer -->
-    <footer id="index">
-      <div class="fheading">
-        <h3>Modern</h3>
-        <h3>Art gallery</h3>
-      </div>
-      <p class="fparagrah">
-        The Modern art gallery is free to all visitors and open <br />
-        seven days a week from 8am to 9pm. Find us at 99 <br />
-        King Street, Newport, USA.
-      </p>
-      <div class="icon">
-        <a href="#"><img src="./images/fontawesome/icon-facebook.svg" alt="facebook"></a>
-        <a href="#"><img src="./images/fontawesome/icon-instagram.svg" alt="instagram"></a>
-        <a href="#"><img src="./images/fontawesome/icon-twitter.svg" alt="twitter"></a>
+    <footer>
+      <div class="home-footer">
+        <h3>
+          MODERN<br />
+          ART GALLERY
+        </h3>
+        <p>
+          The Modern art gallery is free to all visitors and openseven days a
+          week from 8am to 9pm. Find us at 99 King Street, Newport, USA.
+        </p>
+        <div class="home-icons">
+          <a href="#"
+            ><img src="./images/fontawesome/icon-facebook.svg" alt="facebook"
+          /></a>
+          <a href="#"
+            ><img src="./images/fontawesome/icon-instagram.svg" alt="instagram"
+          /></a>
+          <a href="#"
+            ><img src="./images/fontawesome/icon-twitter.svg" alt="twitter"
+          /></a>
+        </div>
       </div>
     </footer>
   </body>

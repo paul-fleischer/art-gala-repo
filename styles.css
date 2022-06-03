@@ -1,32 +1,81 @@
-body{
+/* Mobile device first */
+.desktop {
+    display: none;
+}
+
+.tablet {
+    display: none;
+}
+
+* {
     margin: 0;
+    padding: 0;
+}
+
+body {
+    justify-content: center;
+    flex-direction: column;
+    line-height: 1;
+    min-width: 375px;
+    max-width: 500px;
+    min-height: 100vh;
+}
+.desktop-hero-img, 
+.tablet-hero-img{
+    display: none;
+}
+/* index page */
+header img{
+    width: 100%;
     
 }
-.button {
+header {
+    color: hsl(0, 0%, 8%);
+}
+
+header h1 {
+    margin: 2% 3%;
+    font-size: 3.5em;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: 'Big Shoulders Display',cursive;
+
+}
+header p {
+    margin: 0 3%;
+    font-size: 1.125em;
+    font-weight: lighter;
+    line-height: 1.6em;
+    color: rgb(68, 68, 68);
+    font-family: 'Outfit', sans-serif;
+}
+
+.home-button{
     display: flex;
     height: 72px;
-    margin-top: 23em;
-    margin-right: 3em;
-    width: 260px;
+    margin: 6% 3%;
+    width: 280px;
     align-items: center;
-    font-family: 'Big Shoulders Display', cursive;
-    position: relative; right: 4em;
     background-color: rgb(21, 21, 21);
     text-align: center;
     cursor: pointer;
+    
+    
 }
 
-.button a{
+.home-button a{
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-size: 1.2em;
-    font-weight: 800;
-    letter-spacing: 0.25em;
-    margin-left: 2em;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    margin-left: 15%;
     cursor: pointer;
+    font-family: 'Outfit', sans-serif;
 }
 
-.button:after{
+.home-button:after {
     content: url(./images/fontawesome/icon-arrow-right.svg);
     position: relative;
     left: 9%;
@@ -36,294 +85,184 @@ body{
     background-color: rgb(213, 150, 108);
 }
 
-.button:hover {
+.home-button:hover {
     background-color: rgb(213, 150, 108);
 }
 
-.button:hover::after {
+.home-button:hover::after {
     background-color: rgb(21, 21, 21);
 }
 
-.button-location {
+.gallery-body {
+    margin: 15% 3%;
+}
+
+.grid-img1 img {
+    width: 100%;
+}
+.gallery-body h2{
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 900;
+    font-size: 3em;
+    margin-top: 5%;
+
+}
+.gallery-body p{
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.2em;
+    word-spacing: 0.2em;
+    font-weight: 200;
+    line-height: 1.5em;
+    padding-right: 5%;
+}
+.grid-img2 img {
+    margin-top: 3%;
+    width: 100%;
+}
+
+.grid-img3 img {
+    margin-top: 3%;
+    width: 100%;
+}
+.gridbox{
+    background-color: hsl(0, 0%, 8%);
+    margin-top: 3%;
+}
+.gridbox-title{
+    padding: 8%;
+}
+.gridbox-title h2{
+    color: hsl(0, 0%, 100%);
+    font-family: 'Big Shoulders Display', cursive;
+    
+}
+.gridbox-title p{
+    color: hsl(0, 0%, 100%);
+}
+
+
+/* footer */
+.home-footer {
+    background-color: hsl(0, 0%, 8%);
+    padding: 1em 2em;
+    color: hsl(0, 0%, 100%);
+}
+
+.home-footer h3 {
+    padding-bottom: 1.5em;
+    font-weight: 900;
+}
+
+.home-footer p {
+    padding-bottom: 1.5em;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 200;
+    line-height: 1em;
+}
+
+.home-icons img {
+    padding: 0.5em;
+
+}
+
+/* location page */
+
+.location-button {
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
     top: 0;
-    width: 15em;
-    height: 4.5em;
+    width: 270px;
+    height: 70px;
     background-color: rgb(21, 21, 21);
     cursor: pointer;
-    position: relative;left: 10em;
-    
+    z-index: 1;
 }
 
-.button-location a {
+.location-button a {
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-size: 1.2em;
-    font-weight: 400;
-    letter-spacing: 0.1em;
-    margin-left: 0.5em;
-    font-family: 'Outfit', sans-serif;
-   
+    font-weight: 800;
+    letter-spacing: 0.25em;
+    margin-left: 20%;
 }
 
-.button-location:after {
+.location-button:after {
     position: absolute;
     text-align: center;
-    line-height: 5em;
-    right: 15em;
+    line-height: 5rem;
+    right: 220px;
     content: url(./images/fontawesome/icon-arrow-left.svg);
-    width: 4em;
-    height: 4.5em;
+    width: 56px;
+    height: 72px;
     background-color: rgb(213, 150, 108);
+}
+
+.location-button:hover {
+    background-color: rgb(213, 150, 108);
+}
+
+.location-button:hover::after {
+    background-color: rgb(21, 21, 21)
+}
+.location-map{
+    background-color: hsl(0, 0%, 8%);
+    padding-bottom: 1em;
+}
+.location-map img{
+    width: 100%;
+    justify-content: center;
     
 }
-
-.button-location:hover {
-    background-color: rgb(213, 150, 108);
-}
-
-.button-location:hover::after {
-    background-color: rgb(21, 21, 21);
-}
-
-/* the intro */
-.index-container {
-    display: flex;
-}
-
-.black-div {
+.location-section{
     background-color: hsl(0, 0%, 8%);
-    height: 85vh;
-    width: 33vw;
-    color: hsl(0, 0%, 100%);
-    text-transform: uppercase;
-    flex-direction: column;
-    font-family: 'Big Shoulders Display', cursive;
-    font-size: xx-large;
-    position: relative;
-
+    padding: 1em 2em;
+  
+   
 }
-.black-div h1{
-    font-size: 2.5em;
+.location-title{
+    color: hsl(0, 0%, 100%);
+    font-family: 'Big Shoulders Display', cursive;
     font-weight: 900;
-    position: relative; left:3em; top: 1em;
-}
-.background-image {
-    background-image: url(./images/desktop/image-hero@2x.jpg);
-    height: 85vh;
-    width: 33vw;
-    background-position: center;
-    background-size: cover;
-    
-    line-height: 1.5em;
-    font-size: 1.3em;
-    
+    font-size: 36px;
+   
 
 }
-.background-image p{
-    font-family: 'Outfit', sans-serif;
-    font-weight: 200;
-    position: relative; left: 15em; top: 8em;
-}
-/* grid pictures  */
-.gallery-body {
-    /* border: 2px solid red; */
-}
-
-article {
-    display: flex;
-}
-
-.gallery-article {
-    /* border: 2px solid blue; */
-    width: 40vw;
-}
-
-.gallery-article h1 {
-    font-size: 4em;
-    font-family: 'Big Shoulders Display', cursive;
-    padding-left: 2em;
-    line-height: 1em;
-    padding-top: 2.5em;
-
-}
-
-.gallery-article p {
-    font-family: 'Outfit', sans-serif;
-    /* border: 2px solid red; */
-    margin-right: 2em;
-    margin-left: 2em;
-    font-size: 1.5em;
-    padding-left: 3.5em;
-    margin-top: -2.7em;
-}
-
-.grid-img1 {
-    width: 45vw;
-    height: 50vh;
-    position: relative;
-    padding-top: 10em;
-    padding-bottom: 2em;
-    padding-left: 3em;
-
-}
-
-
-.multi-grid {
-    margin-bottom: 10em;
-
-
-}
-
-.grid-img2 {
-    width: 45vw;
-    height: 85vh;
-    margin-left: 4em;
-
-}
-
-.grid-img3 {
-    width: 30vw;
-    height: 40vh;
-    float: right;
-    margin-top: -21.8em;
-    margin-right: 6em;
-
-}
-
-.gridbox {
-    background-color: hsl(0, 0%, 8%);
-    color: hsl(0, 0%, 100%);
-    width: 30vw;
-    height: 41vh;
-    float: right;
-    margin-top: -21em;
-    margin-right: 12em;
-    padding: 5em;
-    box-sizing: border-box;
-
-}
-
-.gridbox h1 {
-    font-family: 'Big Shoulders Display', cursive;
-    font-size: 1em;
-}
-
-.gridbox p {
-    font-family: 'Outfit', sans-serif;
-    font-size: 1.5em;
-}
-
-/* footer elements */
-#index {
-    background-color: hsl(0, 0%, 8%);
-    color: hsl(0, 0%, 100%);
-}
-
-/* location  */
-.location-map {
-    height: 72vh;
-    width: 100vw;
-    display: flex;
-    border: solid black;
-    background-image: url(./images/desktop/image-map@2x.png);
-    background-size: contain;
-}
-
-.location-section {
-    height: 62vh;
-    width: 100vw;
-    background-color: hsl(0, 0%, 8%);
-    display: flex;
-}
-
-.location-body {
-    color: hsl(0, 0%, 100%);
-    width: 30%;
-    text-transform: uppercase;
-    font-family: 'Big Shoulders Display', cursive;
-    font-size: 3.8em;
-    font-weight: bolder;
-    padding-left: 2.4em;
-    line-height: 1.4em;
-    margin-right: 3em;
-}
-
-#street {
+.location-address h2{
     color: rgb(213, 150, 108);
     font-family: 'Big Shoulders Display', cursive;
-    font-size: 2.8em;
-    margin-top: 1.6em;
-    margin-left: 2em;
-
+    font-size: 26px;
+    
+  
 }
-
-.paddress {
+.location-address p{
     color: hsl(0, 0%, 100%);
     font-family: 'Outfit', sans-serif;
-    font-size: 1.4em;
-    line-height: 1.5em;
-    margin-right: 10em;
-    margin-top: -0.7em;
-    margin-left: 4.25em;
-    font-weight: 300;
-
-}
-
-footer {
-    background-color: rgb(213, 150, 108);
-    display: flex;
-
-
-}
-
-.fheading {
-    text-transform: uppercase;
-    font-size: 1.8em;
-    line-height: 0.3em;
-    padding-left: 5em;
-    padding-top: 3em;
-    font-family: 'Big Shoulders Display', cursive;
-    font-weight: bolder;
-
-
-}
-
-.fparagrah {
-    align-items: center;
-    padding-left: 6.75em;
-    padding-top: 4em;
-    padding-bottom: 3.75em;
-    font-size: 1.2em;
-    line-height: 1.75em;
-    font-family: 'Outfit', sans-serif;
-    margin-right: 7.5em;
+    padding: 0.5em;
     font-weight: 200;
-
+    
 }
-
-
-.icon{
-   margin-top: 7em;
-   margin-left: 9em;
-        
-   
-        
+/* location footer */
+.location-footer{
+    background-color: rgb(213, 150, 108);
+    padding: 1em 2em;
 }
-.icon a{
+.location-footer h3{
+    padding-bottom: 1.5em;
+    font-weight: 900;
+}
+.location-footer p{
+    padding-bottom: 1.5em;
+    font-family: 'Outfit', sans-serif; 
+    font-weight: 200;
+}
+.icons img{
     padding: 0.5em;
    
 }
-
-/* responsive for mobile devices */
-
-
-
-
 
 
 /* font-family: 'Big Shoulders Display',cursive;
