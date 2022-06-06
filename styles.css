@@ -4,6 +4,7 @@
 * {
     margin: 0;
     padding: 0;
+    
 }
 
 body {
@@ -13,7 +14,18 @@ body {
     min-width: 375px;
     max-width: 500px;
     min-height: 100vh;
+
 }
+.index-body{
+    justify-content: center;
+    flex-direction: column;
+    line-height: 1;
+    min-width: 375px;
+    max-width: 500px;
+    min-height: 100vh;
+}
+
+
 .desktop-hero-img, 
 .tablet-hero-img{
     display: none;
@@ -160,7 +172,7 @@ body {
     padding-bottom: 1.5em;
     font-family: 'Outfit', sans-serif;
     font-weight: 200;
-    line-height: 1em;
+    line-height: 2em;
 }
 
 .home-icons img {
@@ -195,7 +207,7 @@ body {
     }
     .tablet-hero-img{
         display: block;
-        width: 450px;
+        width: 437px;
         height: 700px;
         grid-column: 1/4;
         grid-row: 1/6;
@@ -208,9 +220,10 @@ body {
         font-weight: 800;
         grid-column: 3/4;
         grid-row: 2/4;
+        font-size: 5.5em;
     }
     .index-header p{
-        width:20em;
+        width: 20em;
         grid-column: 3/4;
         grid-row: 4;
     }
@@ -229,6 +242,9 @@ body {
     .gallery-article{
         grid-column: 1;
         grid-row: 1/2;
+    }
+    .gallery-article h2{
+        font-size: 4.5em;
     }
     .tablet-grid-img1{
         display: block;
@@ -449,28 +465,24 @@ body {
 .location-button:hover::after {
     background-color: rgb(21, 21, 21)
 }
-.location-map{
-    background-color: hsl(0, 0%, 8%);
-    padding-bottom: 1em;
-}
+
+
 .location-map img{
     width: 100%;
     justify-content: center;
     
 }
-.location-section{
-    background-color: hsl(0, 0%, 8%);
-    padding: 1em 2em;
-  
-   
-}
+
 .location-title{
     color: hsl(0, 0%, 100%);
     font-family: 'Big Shoulders Display', cursive;
-    font-weight: 900;
-    font-size: 36px;
-   
+    background-color: hsl(0, 0%, 8%);
+    padding: 1em 2em;
 
+}
+.location-title h1{
+    padding-bottom: 1em;
+    font-size: 46px;
 }
 .location-address h2{
     color: rgb(213, 150, 108);
@@ -484,6 +496,7 @@ body {
     font-family: 'Outfit', sans-serif;
     padding: 0.5em;
     font-weight: 200;
+    line-height: 2em ;
     
 }
 /* location footer */
@@ -494,11 +507,13 @@ body {
 .location-footer h3{
     padding-bottom: 1.5em;
     font-weight: 900;
+    
 }
 .location-footer p{
     padding-bottom: 1.5em;
     font-family: 'Outfit', sans-serif; 
     font-weight: 200;
+    line-height: 2em;
 }
 .icons img{
     padding: 0.5em;
@@ -511,24 +526,39 @@ body {
     
 }
 @media screen and (min-width: 768px){
+    .mobile{
+        display: none;
+    }
+    .tablet{
+        display: block;
+        
+    }
+    .tablet img{
+        width: 100%;
+       
+    }
    
     body{
         min-width: 768px;
         max-width: 920px;
     }
-    .location-section{
+    .location-title{
         display: inline-flex;
-        padding: 5% 10% 10% 10%;
+        padding: 10% 10%;
     }
-    .location-section h2{
-        font-size: 1em;
-        padding-right: 20%;
+    .location-title h1{
+        padding-right: 10%;
+        font-size: 3em;
+    }
+    .location-title h2{
+        font-size: 1.5em;
+        
     }
     .location-footer{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding-bottom: 5%;
+        padding-bottom: 7%;
         padding-top: 5%;
        
     }
@@ -549,6 +579,17 @@ body {
     
 }
 @media screen and (min-width:1200px){
+    .tablet,
+    .mobile{ 
+        display: none
+    }
+    .desktop{
+        display: block;
+    }
+    .desktop img{
+        width: 100%;
+    }
+
    body{ min-width: 1200px;
     max-width: 1600px;
     margin: 0 auto;   
@@ -556,14 +597,14 @@ body {
    .location-button{
        left: 10%
    }
-   .location-section{
+   .location-title{
        display: inline-flex;
        padding: 8% 10% 10% 10%;
    }
-   .location-section h1{
+   .location-title h1{
        font-size: 1em;
    }
-   .location-section h2{
+   .location-title h2{
        font-size: 2em;
    }
    /* .icons{
